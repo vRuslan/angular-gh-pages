@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "deploy": "rimraf dist && ng build --base-href 'https://vRuslan.github.io/gh-angular-pages/' && npx angular-cli-ghpages --dir=dist/angular-gh-pages",
+    "deploy": "rimraf dist && ng build --base-href 'https://vRuslan.github.io/gh-angular-pages/' && npx angular-cli-ghpages --dir=dist/gh-angular-pages",
     "test": "ng test"
   },
   "private": true,
