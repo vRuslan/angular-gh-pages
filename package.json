@@ -1,11 +1,13 @@
 {
-  "name": "angular-gh-pages",
+  "name": "gh-react-pages",
   "version": "0.0.0",
+  "homepage": "https://vRuslan.github.io/gh-angular-pages",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "deploy": "rimraf dist && ng build --base-href 'https://vRuslan.github.io/gh-angular-pages/' && npx angular-cli-ghpages --dir=dist/angular-gh-pages",
     "test": "ng test"
   },
   "private": true,
@@ -18,6 +20,7 @@
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "rimraf": "^3.0.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
